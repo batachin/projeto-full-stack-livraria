@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 const CreateBook = (props) => {
+  const apiUrl = import.meta.env.VITE_API_URL;
   // Define the state with useState hook
   const navigate = useNavigate();
   const [book, setBook] = useState({
@@ -19,7 +20,7 @@ const CreateBook = (props) => {
   const onSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8082/api/books", book)
+      .post(`${apiUrl}/api/books/`, book)
       .then((res) => {
         setBook({
           title: "",
@@ -117,8 +118,7 @@ float-left"
               </div>
               <input
                 type="submit"
-                className="btn btn-outline-warning btn-block
-mt-4"
+                className="btn btn-outline-warning btn-blockmt-4"
               />
             </form>
           </div>
