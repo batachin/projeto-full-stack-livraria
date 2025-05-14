@@ -9,12 +9,21 @@ import UpdateBookInfo from './components/UpdateBookInfo';
 const App = () => {
   return (
     <Router>
+<<<<<<< HEAD
         <Routes>
           <Route path='/' element={<ShowBookList />} />
           <Route path='/create-book' element={<CreateBook />} />
           <Route path='/edit-book/:id' element={<UpdateBookInfo />} />
           <Route path='/show-book/:id' element={<ShowBookDetails />} />
         </Routes>
+=======
+      <Routes>
+        <Route path="/" element={<ShowBookList />} />
+        <Route path="/create-book" element={<CreateBook />} />
+        <Route path="/edit-book/:id" element={<UpdateBookInfo />} />
+        <Route path="/show-book/:id" element={<ShowBookDetails />} />
+      </Routes>
+>>>>>>> 09233f67dae0d014011872c0f4be6be06131e3e4
     </Router>
   );
 };
