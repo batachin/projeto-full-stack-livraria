@@ -1,7 +1,7 @@
 import { FaIceCream } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
-import { FaAddressCard } from "react-icons/fa";
-import { FaComment } from "react-icons/fa";
+import { MdCreateNewFolder } from "react-icons/md";
+import { FaBackward } from "react-icons/fa";
 import { FaClock } from "react-icons/fa";
 import { FaStickyNote } from "react-icons/fa";
 import { FaUserFriends } from "react-icons/fa";
@@ -9,6 +9,7 @@ import { FaGear } from "react-icons/fa6";
 import { BsQuestionCircleFill } from "react-icons/bs";
 import { IoShieldCheckmarkSharp } from "react-icons/io5";
 import { RiCloseLargeFill } from "react-icons/ri";
+import { Link } from "react-router-dom";
 
 
 export default function barraLateral({toggleSidebar}) {
@@ -23,52 +24,51 @@ export default function barraLateral({toggleSidebar}) {
           <h1 className="logo" id="dashboard">
             <FaIceCream />
             Dashboard
-            
           </h1>
-          <button className="opcoes" id="home">
+          <li className="opcoes" id="home"><Link to="/">
             <FaHouse />
             Home
-          </button>
+          </Link></li>
 
-          <button className="opcoes" id="profile">
-            <FaAddressCard />
-            Profile
-          </button>
+          <li className="opcoes" id="profile"><Link to="/create-book">
+            <MdCreateNewFolder />
+            Create Book
+          </Link></li>
 
-          <button className="opcoes" id="messagens">
-            <FaComment />
-            Messagens
-          </button>
+          <li className="opcoes" id="messagens"><Link to='/edit-book/:id'>
+            <FaBackward />
+            Edit Book
+          </Link></li>
 
-          <button class="opcoes" id="History">
+          <li className="opcoes" id="History"><Link to='/show-book/:id'>
             <FaClock />
-            History
-          </button>
+            Show Book
+          </Link></li>
 
-          <button className="opcoes" id="tasks">
+          <li className="opcoes" id="tasks"><Link to='/'>
             <FaStickyNote />
             Tasks
-          </button>
+          </Link></li>
 
-          <button className="opcoes" id="communities">
+          <li className="opcoes" id="communities"><Link to='/'>
             <FaUserFriends />
             Communities
-          </button>
+          </Link></li>
 
-          <button className="opcoes" id="settings">
+          <li className="opcoes" id="settings"><Link to='/'>
             <FaGear />
             Settings
-          </button>
+          </Link></li>
 
-          <button className="opcoes" id="support">
+          <li className="opcoes" id="support" ><Link to='/'>
             <BsQuestionCircleFill />
             Support
-          </button>
+          </Link></li>
 
-          <button className="opcoes" id="privacy">
+          <li className="opcoes" id="privacy" ><Link to='/'>
             <IoShieldCheckmarkSharp />
             Privacy
-          </button>
+          </Link></li>
         </div>
       </div>
     </>
