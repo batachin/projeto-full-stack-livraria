@@ -10,7 +10,7 @@
     background-color: oklch(0.550 0.190 237.323);
     color: white;
     grid-row: 1 / 3;
-    height: 100vh;
+    height: 100%;
       padding-top: 20px;
 }
 
@@ -69,8 +69,8 @@
 
 .header {
     display: grid;
-    padding: 30px;
-    max-height: 30vh;
+    padding: 15px;
+    padding-bottom: 0px;
     grid-template-rows: 1fr 1fr;
     background-color: white;
     font-size: 20px;
@@ -129,49 +129,8 @@
 
 }
 
-#conteineres {
-    grid-column: 1 / 3;
-    grid-row: 2 / 4;
-    display: grid;
-    grid-template-columns: 50% auto;
-    gap: 20px;
-    padding: 20px;
-
-
-}
-
-.project {
-    grid-row: 1;
-    grid-column: 1;
-}
-
-.announcements {
-    grid-column: 3;
-    grid-row: 1;
-}
-
-.trending {
-    grid-column: 3;
-    grid-row: 5;
-}
-
-.perfils {
-    grid-column: 3;
-    grid-row: 6;
-}
-
-#announcements {
-    grid-row: 2 / 3;
-    grid-column: 3;
-    gap: 20px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 20px;
-
-}
 
 .card-conteiner {
-    background-color: white;
     border-radius: 20px;
     padding: 40px;
     padding-bottom: 100px;
@@ -197,9 +156,15 @@
 }
 
 .layout {
+  width: 100%;
+  height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
     font-family: roboto;
+}
+
+.layout_content {
+  height: 100vh;
 }
 
 .layout-header {
@@ -208,7 +173,9 @@
 }
 
 .layout-menu {
-    grid-column: 1 / 2;
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
     grid-row: 1 / 3;
 }
 
@@ -223,8 +190,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+    min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,27 +214,22 @@
 }
 
 .CreateBook {
-  background-color: #2c3e50;
-  min-height: 100vh;
+
   color: white;
 }
 
 .ShowBookDetails {
-  background-color: #2c3e50;
-  min-height: 100vh;
+  height: 70vh;
   color: white;
 }
 
 .UpdateBookInfo {
-  background-color: #2c3e50;
-  min-height: 100vh;
+  
   color: white;
 }
 
 .ShowBookList {
-  background-color: #2c3e50;
-  height: 100%;
-  width: 100%;
+  height: 70vh;
   min-height: 1vh;
   min-width: 100px;
   color: white;
@@ -289,6 +250,7 @@
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
+  background-color: oklch(0.550 0.190 237.323);
 }
 
 .desc {
@@ -306,15 +268,140 @@
 }
 
 .desc h3 {
-  color: #6c757d;
+  color: #b1bfcc;
   font-size: 1em;
   padding: 10px 0 10px 0;
 }
 
-  .menu-btn {
+.menu-btn {
   display: grid;
   justify-self:right;  
   margin-right: 45px;
   color: white;
   font-weight: 900;
   }
+
+.display-4-text-center {
+  color: black;
+  justify-self: center;
+  font-size: 3.5rem;
+}
+
+.lead-text-center {
+  color: black;
+  justify-self: center;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  
+}
+
+input.form-control {
+  min-width: 100vh;
+    max-width: 600px;
+  margin-bottom: 20px;
+}
+
+
+.btn-outline-warning-float-left {
+  border: oklch(0.550 0.190 237.323) 1px solid;
+  color: white;
+  margin: 50px;
+  background-color: oklch(0.550 0.190 237.323);
+  font-size: 20px;
+  text-decoration-line: none;
+  border-radius: 11px;
+  padding: 4px;
+}
+
+input.btn {
+	border: none;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 5px;
+	cursor: pointer;
+	border-radius: 15px;
+  background-color: oklch(0.550 0.190 237.323);
+  width: 290px;
+}
+
+button.btn {
+	border: none;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 5px;
+	cursor: pointer;
+	border-radius: 15px;
+  background-color: oklch(0.550 0.190 237.323);
+}
+
+a.btn {
+  text-decoration-line: none;
+  margin: 40px;
+  color: white;
+  background-color: oklch(0.550 0.190 237.323);
+  padding: 8px;
+  border-radius: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.list {
+  color: black;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.form-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+
+}
+
+.form-control {
+  height: 35px;
+  border-radius: 10px;
+  border: black 1px solid;;
+  padding: 3px;
+  width: 300px;
+  margin: 0px;
+  
+}
+
+.form-edit {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  margin: 20px;
+  
+}
+
+.form-control-edit {
+  height: 35px;
+  min-width: 100vh;
+  border-radius: 10px;
+  border: black 1px solid;;
+  padding: 3px;
+}
+
+
+

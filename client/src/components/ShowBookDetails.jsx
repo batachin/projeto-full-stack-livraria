@@ -73,16 +73,15 @@ function ShowBookDetails(props) {
             <br /> <br />
             <Link
               to="/"
-              className="btn btn-outline-warning
-float-left"
+              className="btn-outline-warning-float-left"
             >
               Show Book List
             </Link>
           </div>
           <br />
           <div className="col-md-8 m-auto">
-            <h1 className="display-4 text-center">Book's Record</h1>
-            <p className="lead text-center">View Book's Info</p>
+            <h1 className="display-4-text-center">Book's Record</h1>
+            <p className="lead-text-center">View Book's Info</p>
             <hr /> <br />
           </div>
           <div className="col-md-10 m-auto">{BookItem}</div>

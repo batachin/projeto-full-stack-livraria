@@ -45,16 +45,15 @@ const CreateBook = (props) => {
             <br />
             <Link
               to="/"
-              className="btn btn-outline-warning
-float-left"
+              className="btn-outline-warning-float-left"
             >
-              Show BooK List
+              Show Book List
             </Link>
           </div>
           <div className="col-md-8 m-auto">
-            <h1 className="display-4 text-center">Add Book</h1>
-            <p className="lead text-center">Create new book</p>
-            <form noValidate onSubmit={onSubmit}>
+            <h1 className="display-4-text-center">Add Book</h1>
+            <p className="lead-text-center">Create new book</p>
+            <form className="form-input" noValidate onSubmit={onSubmit}>
               <div className="form-group">
                 <input
                   type="text"
@@ -116,11 +115,14 @@ float-left"
                   onChange={onChange}
                 />
               </div>
+
               <input
                 type="submit"
-                className="btn btn-outline-warning btn-blockmt-4"
+                className="btn btn-outline-warning btn-blockmt-4 btn-lg"
               />
+
             </form>
+                
           </div>
         </div>
       </div>
