@@ -142,8 +142,7 @@ function UpdateBookInfo(props) {
             <br />
                  <button
               type="submit"
-              className="btn btn-outline-info btn-lg
-btn-block btn-"
+              className="btn btn-outline-info btn-lg btn-"
             >
               Update Book
             </button>

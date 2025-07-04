@@ -18,7 +18,12 @@
     display: grid;
     grid-template-rows: 120px;
     padding: 20px;
+    gap: 10px
 
+}
+
+li {
+  list-style: none;
 }
 
 #communities {
@@ -359,5 +364,70 @@ a {
   padding: 3px;
 }
 
+.options-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.btn-delete {
+  background-color: red;
+  	border: none;
+	color: white;
+	padding: 8px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 5px;
+	cursor: pointer;
+	border-radius: 40px;
+  width: 200px;
+  height: 50px;
+}
 
+.btn-edit {
+  background-color: oklch(0.550 0.190 237.323);
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+}
+
+.table {
+  display: flex;
+  justify-self: center;
+  color: black;
+  border-collapse: collapse;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+  text-align: left;
+  
+}
+
+.number {
+  padding: 15px;
+  background-color: oklch(0.550 0.190 237.323);
+  
+}
+
+.writing {
+  padding: 15px;
+  border: 1px solid #bdbdbd;
+}
+
+.details {
+  padding: 15px;
+  border: 1px solid #bdbdbd;
+}

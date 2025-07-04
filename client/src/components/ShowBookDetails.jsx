@@ -32,34 +32,34 @@ function ShowBookDetails(props) {
       <table className="table table-hover table-dark">
         <tbody>
           <tr>
-            <th scope="row">1</th>
-            <td>Title</td>
-            <td>{book.title}</td>
+            <th className="number" scope="row">1</th>
+            <td className="writing">Title</td>
+            <td className="details">{book.title}</td>
           </tr>
           <tr>
-            <th scope="row">2</th>
-            <td>Author</td>
-            <td>{book.author}</td>
+            <th className="number" scope="row">2</th>
+            <td className="writing">Author</td>
+            <td className="details">{book.author}</td>
           </tr>
           <tr>
-            <th scope="row">3</th>
-            <td>ISBN</td>
-            <td>{book.isbn}</td>
+            <th className="number" scope="row">3</th>
+            <td className="writing">ISBN</td>
+            <td className="details">{book.isbn}</td>
           </tr>
           <tr>
-            <th scope="row">4</th>
-            <td>Publisher</td>
-            <td>{book.publisher}</td>
+            <th className="number" scope="row">4</th>
+            <td className="writing">Publisher</td>
+            <td className="details">{book.publisher}</td>
           </tr>
           <tr>
-            <th scope="row">5</th>
-            <td>Published Date</td>
-            <td>{book.published_date}</td>
+            <th className="number" scope="row">5</th>
+            <td className="writing">Published Date</td>
+            <td className="details">{book.published_date}</td>
           </tr>
           <tr>
-            <th scope="row">6</th>
-            <td>Description</td>
-            <td>{book.description}</td>
+            <th className="number" scope="row">6</th>
+            <td className="writing">Description</td>
+            <td className="details">{book.description}</td>
           </tr>
         </tbody>
       </table>
@@ -85,11 +85,11 @@ function ShowBookDetails(props) {
             <hr /> <br />
           </div>
           <div className="col-md-10 m-auto">{BookItem}</div>
+          <div className="options-edit">
           <div className="col-md-6 m-auto">
             <button
               type="button"
-              className="btn btn-outline-danger btn-lg
-btn-block"
+              className="btn-delete"
               onClick={() => {
                 onDeleteClick(book._id);
               }}
@@ -97,13 +97,13 @@ btn-block"
               Delete Book
             </button>
           </div>
-          <div className="col-md-6 m-auto">
+
             <Link
               to={`/edit-book/${book._id}`}
-              className="btn btn-outline-info btn-lg
-btn-block"
             >
-              Edit Book
+              <button className="btn-edit">
+                Edit Book
+              </button>
             </Link>
           </div>
         </div>
