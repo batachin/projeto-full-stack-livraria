@@ -62,9 +62,9 @@
 
 
 .image-low {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
 }
 
 .header {
@@ -115,56 +115,17 @@
     margin: 20px;
 }
 
-
-.conteiner {
-    background-color: rgb(219, 219, 219);
-    grid-column: 2;
-    grid-row: 2 / 3;
-    display: grid;
-    padding: 20px;
-
-    grid-template-columns: 500px auto 400px;
-    grid-template-rows: 100px 100px 100px 100px 70px;
-
-
-}
-
-
-.card-conteiner {
-    border-radius: 20px;
-    padding: 40px;
-    padding-bottom: 100px;
-}
-
-.card-announcements {
-    padding: 20px;
-}
-
-.titule-announcements {
-    font-size: 20px;
-}
-
-.titule-card {
-    font-size: 30px;
-}
-
-.perfils {
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 22px;
-}
-
 .layout {
   width: 100%;
   height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     font-family: roboto;
 }
 
 .layout_content {
-  height: 100vh;
+  height: 100%;
 }
 
 .layout-header {
@@ -173,10 +134,8 @@
 }
 
 .layout-menu {
-    width: 100%;
-    height: 100%;
     grid-column: 1;
-    grid-row: 1 / 3;
+    grid-row: 1 / 5;
 }
 
 .App {
@@ -219,7 +178,6 @@
 }
 
 .ShowBookDetails {
-  height: 70vh;
   color: white;
 }
 
@@ -229,9 +187,7 @@
 }
 
 .ShowBookList {
-  height: 70vh;
-  min-height: 1vh;
-  min-width: 100px;
+
   color: white;
 }
 
@@ -245,7 +201,7 @@
 }
 
 .card-container {
-  width: 250px;
+  width: 250px ;
   border: 1px solid rgba(0, 0, .125);
   margin: 0 auto;
   border-radius: 5px;
