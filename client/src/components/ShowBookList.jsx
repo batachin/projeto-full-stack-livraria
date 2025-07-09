@@ -37,7 +37,6 @@ function ShowBookList() {
             </Link>
             <br />
             <br />
-            <hr />
           </div>
         </div>
         <div className="list">{bookList}</div>

@@ -30,6 +30,10 @@ li {
     margin-bottom: 30%;
 }
 
+.logo-text {
+  padding: 10px;
+}
+
 .opcoes a{
     color: white;
     padding: 10px;
@@ -67,18 +71,19 @@ li {
 
 
 .image-low {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
 }
 
 .header {
     display: grid;
-    padding: 15px;
+    padding: 10px;
     padding-bottom: 0px;
     grid-template-rows: 1fr 1fr;
     background-color: white;
     font-size: 20px;
+    box-shadow: black 0px 0px 15px;
 }
 
 .header-high {
@@ -101,8 +106,8 @@ li {
 }
 
 .image-high {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   grid-row: 1;
   border-radius: 100%;
   margin-left: auto;
@@ -183,6 +188,7 @@ li {
 }
 
 .ShowBookDetails {
+
   color: white;
 }
 
@@ -192,7 +198,7 @@ li {
 }
 
 .ShowBookList {
-
+  
   color: white;
 }
 

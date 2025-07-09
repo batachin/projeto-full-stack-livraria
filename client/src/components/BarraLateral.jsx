@@ -20,53 +20,56 @@ export default function barraLateral({toggleSidebar}) {
   <RiCloseLargeFill className="menu-btn" onClick={toggleSidebar} />
         <div className="opcao">
 
-
+           
           <h1 className="logo" id="dashboard">
             <FaIceCream />
-            Dashboard
+            <span className="logo-text">
+              Dashboard
+            </span>
+            
           </h1>
-          <li className="opcoes" id="home"><Link to="/">
-            <FaHouse />
+          <li className="opcoes" id="home"><FaHouse /> <Link to="/">
+            
             Home
           </Link></li>
 
-          <li className="opcoes" id="profile"><Link to="/create-book">
-            <MdCreateNewFolder />
+          <li className="opcoes" id="profile"><MdCreateNewFolder /> <Link to="/create-book">
+            
             Create Book
           </Link></li>
 
-          <li className="opcoes" id="messagens"><Link to='/edit-book/:id'>
-            <FaBackward />
+          <li className="opcoes" id="messagens"><FaBackward /><Link to='/edit-book/:id'>
+            
             Edit Book
           </Link></li>
 
-          <li className="opcoes" id="History"><Link to='/show-book/:id'>
-            <FaClock />
+          <li className="opcoes" id="History"><FaClock /><Link to='/show-book/:id'>
+            
             Show Book
           </Link></li>
 
-          <li className="opcoes" id="tasks"><Link to='/'>
-            <FaStickyNote />
+          <li className="opcoes" id="tasks"><FaStickyNote /><Link to='/'>
+            
             Tasks
           </Link></li>
 
-          <li className="opcoes" id="communities"><Link to='/'>
-            <FaUserFriends />
+          <li className="opcoes" id="communities"><FaUserFriends /><Link to='/'>
+            
             Communities
           </Link></li>
 
-          <li className="opcoes" id="settings"><Link to='/'>
-            <FaGear />
+          <li className="opcoes" id="settings"><FaGear /><Link to='/'>
+            
             Settings
           </Link></li>
 
-          <li className="opcoes" id="support" ><Link to='/'>
-            <BsQuestionCircleFill />
+          <li className="opcoes" id="support" ><BsQuestionCircleFill /><Link to='/'>
+            
             Support
           </Link></li>
 
-          <li className="opcoes" id="privacy" ><Link to='/'>
-            <IoShieldCheckmarkSharp />
+          <li className="opcoes" id="privacy" ><IoShieldCheckmarkSharp /><Link to='/'>
+            
             Privacy
           </Link></li>
         </div>
